@@ -90,3 +90,4 @@ ENV/
 
 # MacOS
 .DS_Store
+functions/
