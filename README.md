@@ -12,6 +12,6 @@ Just simply appach your Python file into base zip file. Than upload into AWS Lam
 # Description of zip files.
 Base zip files are store on "zip-files" folder.
 
-## bigquery-mysql-base.zip 
+bigquery-mysql-base.zip 
 - [BigQuery-Python 1.8.0](https://github.com/tylertreat/BigQuery-Python)
 - [PyMySQL 0.7.9](https://github.com/PyMySQL/PyMySQL)
