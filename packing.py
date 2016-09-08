@@ -27,11 +27,12 @@ if zipfile.is_zipfile(args.base):
         print('Packing up!!!')
         # append mode
         packing = zipfile.ZipFile('out.zip', mode='a')
-        for obj in args.files:
-            try:
+        try:
+            for obj in args.files:
                 packing.write(obj)
-            finally:
-                packing.close()
+        finally:
+            packing.close()
+        
 else:
     print('Seems your %s not a proper zipfile.' %args.base)
     sys.exit()
