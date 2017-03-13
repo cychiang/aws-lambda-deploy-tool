@@ -1,8 +1,10 @@
+"""
+packing
+"""
 import argparse
 import zipfile
 import sys
 import os
-import datetime
 from shutil import copyfile
 
 # Parse input arguments
@@ -13,7 +15,7 @@ args = parser.parse_args()
 
 # Is zipfile?
 if zipfile.is_zipfile(args.base):
-    isFiles = [ os.path.isfile(obj) for obj in args.files ]
+    isFiles = [os.path.isfile(obj) for obj in args.files]
     if False in isFiles:
         for idx, val in enumerate(isFiles):
             if val is False:
